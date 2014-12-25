@@ -1,0 +1,4 @@
+cd /docker-registry/config/
+cp config_sample.yml config.yml
+cat Dockerfile | docker build -t phanhoang .
+docker run -p 5000:5000 --name demo-registry phanhoang
